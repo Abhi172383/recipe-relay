@@ -1,0 +1,10 @@
+[run]
+source = src/backend/recipes
+omit =
+    */migrations/*
+    */__init__.py
+    */admin.py
+
+[report]
+show_missing = True
+fail_under = 80

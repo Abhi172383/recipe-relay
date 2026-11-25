@@ -1,0 +1,906 @@
+[
+  {
+    "canonical_name": "butter",
+    "aliases": ["unsalted butter", "salted butter", "sweet cream butter"],
+    "allergens": ["dairy"],
+    "dietary_incompatible": ["vegan", "dairy-free"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Common baking and sauteing fat containing milk solids.",
+    "allowed_substitutes": [
+      {
+        "name": "olive oil",
+        "ratio": "3/4 tbsp per 1 tbsp butter",
+        "rationale": "Ideal for sauteing and savory sauces without dairy.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "coconut oil",
+        "ratio": "1:1",
+        "rationale": "Solid at cool room temperature, working well in baking.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "applesauce",
+        "ratio": "1/2 cup per 1 cup butter",
+        "rationale": "Adds moisture in sweet muffins and cakes with zero fat or dairy.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "ghee",
+        "ratio": "1:1",
+        "rationale": "Rich clarified butter flavor for high-heat cooking.",
+        "allergens": ["dairy"],
+        "dietary_tags": ["vegetarian", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "whole milk",
+    "aliases": ["milk", "cow milk", "dairy milk", "2% milk", "skim milk"],
+    "allergens": ["dairy"],
+    "dietary_incompatible": ["vegan", "dairy-free"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Standard dairy milk.",
+    "allowed_substitutes": [
+      {
+        "name": "oat milk",
+        "ratio": "1:1",
+        "rationale": "Creamy neutral flavor suitable for baking, sauces, and coffee.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "nut-free"]
+      },
+      {
+        "name": "soy milk",
+        "ratio": "1:1",
+        "rationale": "High protein content mimics dairy milk structure in baking.",
+        "allergens": ["soy"],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "almond milk",
+        "ratio": "1:1",
+        "rationale": "Light plant-based milk for cereals and smoothies.",
+        "allergens": ["tree_nut"],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free"]
+      },
+      {
+        "name": "rice milk",
+        "ratio": "1:1",
+        "rationale": "Hypoallergenic plant milk free of dairy, soy, gluten, and nuts.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "heavy cream",
+    "aliases": ["heavy whipping cream", "double cream", "whipping cream"],
+    "allergens": ["dairy"],
+    "dietary_incompatible": ["vegan", "dairy-free"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "High-fat dairy cream for sauces and desserts.",
+    "allowed_substitutes": [
+      {
+        "name": "full-fat coconut milk",
+        "ratio": "1:1",
+        "rationale": "Thick canned coconut milk provides rich texture in curries and sauces.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "cashew cream",
+        "ratio": "1:1",
+        "rationale": "Blended soaked cashews create a silky neutral cream sauce.",
+        "allergens": ["tree_nut"],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free"]
+      },
+      {
+        "name": "silken tofu blend",
+        "ratio": "1:1 blended with 1 tbsp olive oil",
+        "rationale": "Delivers smooth body in creamy pasta sauces without dairy or nuts.",
+        "allergens": ["soy"],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "parmesan cheese",
+    "aliases": ["parmesan", "parmigiano reggiano", "grated parmesan"],
+    "allergens": ["dairy"],
+    "dietary_incompatible": ["vegan", "dairy-free"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Aged hard cheese providing umami.",
+    "allowed_substitutes": [
+      {
+        "name": "nutritional yeast",
+        "ratio": "1/2 tbsp per 1 tbsp parmesan",
+        "rationale": "Adds savory, cheesy umami flavor without dairy or nuts.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "pecorino romano",
+        "ratio": "1:1",
+        "rationale": "Similar sharp aged texture when dairy is tolerated.",
+        "allergens": ["dairy"],
+        "dietary_tags": ["vegetarian", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "greek yogurt",
+    "aliases": ["plain yogurt", "yogurt", "curd"],
+    "allergens": ["dairy"],
+    "dietary_incompatible": ["vegan", "dairy-free"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Thick tangy fermented dairy.",
+    "allowed_substitutes": [
+      {
+        "name": "coconut yogurt",
+        "ratio": "1:1",
+        "rationale": "Provides tangy creaminess for marinades and dressings without dairy.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "silken tofu",
+        "ratio": "1:1 blended with 1 tsp lemon juice",
+        "rationale": "Matches thick consistency and mild tang in dips.",
+        "allergens": ["soy"],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "whey protein",
+    "aliases": ["whey", "whey powder", "casein"],
+    "allergens": ["dairy"],
+    "dietary_incompatible": ["vegan", "dairy-free"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Milk-derived protein; always carries dairy allergen.",
+    "allowed_substitutes": [
+      {
+        "name": "pea protein",
+        "ratio": "1:1",
+        "rationale": "Plant-based protein isolate free of dairy, soy, gluten, and nuts.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "eggs",
+    "aliases": ["egg", "large egg", "chicken egg", "whole egg"],
+    "allergens": ["egg"],
+    "dietary_incompatible": ["vegan"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Used for binding, leavening, and richness.",
+    "allowed_substitutes": [
+      {
+        "name": "flax egg",
+        "ratio": "1 tbsp ground flaxseed + 3 tbsp water per egg",
+        "rationale": "Binds batters in pancakes, muffins, and cookies effectively.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "mashed banana",
+        "ratio": "1/4 cup per egg",
+        "rationale": "Adds moisture and binding in sweet baked goods.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "aquafaba",
+        "ratio": "3 tbsp per egg",
+        "rationale": "Chickpea liquid whips and binds like egg whites.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "mayonnaise",
+    "aliases": ["mayo"],
+    "allergens": ["egg"],
+    "dietary_incompatible": ["vegan"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Emulsified egg-and-oil condiment.",
+    "allowed_substitutes": [
+      {
+        "name": "mashed avocado",
+        "ratio": "1:1",
+        "rationale": "Creamy spreadable fat for sandwiches and salads without eggs.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "hummus",
+        "ratio": "1:1",
+        "rationale": "Savory creamy binder for wraps and cold salads.",
+        "allergens": ["sesame"],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "greek yogurt",
+        "ratio": "1:1",
+        "rationale": "Lighter tangy substitute for egg-free dressings when dairy is fine.",
+        "allergens": ["dairy"],
+        "dietary_tags": ["vegetarian", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "all-purpose flour",
+    "aliases": ["ap flour", "plain flour", "wheat flour", "white flour"],
+    "allergens": ["gluten", "wheat"],
+    "dietary_incompatible": ["gluten-free"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Standard wheat baking flour.",
+    "allowed_substitutes": [
+      {
+        "name": "oat flour",
+        "ratio": "1:1 by weight (or 1.25 cups per 1 cup)",
+        "rationale": "Mild-tasting gluten-free flour for pancakes, muffins, and cookies.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "rice flour blend",
+        "ratio": "1:1",
+        "rationale": "Neutral 1-to-1 gluten-free baking blend without nuts.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "almond flour",
+        "ratio": "1:1",
+        "rationale": "Adds tender crumb in grain-free baking.",
+        "allergens": ["tree_nut"],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free"]
+      },
+      {
+        "name": "spelt flour",
+        "ratio": "1:1",
+        "rationale": "Ancient wheat grain with nutty flavor (still contains gluten).",
+        "allergens": ["gluten", "wheat"],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "breadcrumbs",
+    "aliases": ["panko", "bread crumbs", "panko breadcrumbs"],
+    "allergens": ["gluten", "wheat"],
+    "dietary_incompatible": ["gluten-free"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Used for crisp coatings and binding.",
+    "allowed_substitutes": [
+      {
+        "name": "crushed rice crackers",
+        "ratio": "1:1",
+        "rationale": "Provides crisp gluten-free coating for baked or pan-fried dishes.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "rolled oats",
+        "ratio": "1:1",
+        "rationale": "Works as a hearty binder in veggie patties and meatballs.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "pasta",
+    "aliases": ["spaghetti", "penne", "wheat pasta", "macaroni"],
+    "allergens": ["gluten", "wheat"],
+    "dietary_incompatible": ["gluten-free"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Durum wheat pasta.",
+    "allowed_substitutes": [
+      {
+        "name": "brown rice pasta",
+        "ratio": "1:1",
+        "rationale": "Holds sauce similarly to wheat pasta while remaining gluten-free.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "chickpea pasta",
+        "ratio": "1:1",
+        "rationale": "High-protein gluten-free pasta alternative.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "soy sauce",
+    "aliases": ["shoyu", "tamari", "light soy sauce", "dark soy sauce"],
+    "allergens": ["soy", "gluten"],
+    "dietary_incompatible": ["gluten-free"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Fermented soy seasoning; regular soy sauce also contains wheat.",
+    "allowed_substitutes": [
+      {
+        "name": "coconut aminos",
+        "ratio": "1:1",
+        "rationale": "Savory umami seasoning free of soy and gluten.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "gluten-free tamari",
+        "ratio": "1:1",
+        "rationale": "Replaces wheat-based soy sauce for gluten-free cooking (contains soy).",
+        "allergens": ["soy"],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "tofu",
+    "aliases": ["firm tofu", "extra firm tofu", "bean curd"],
+    "allergens": ["soy"],
+    "dietary_incompatible": [],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Soybean curd protein.",
+    "allowed_substitutes": [
+      {
+        "name": "chickpeas",
+        "ratio": "1 cup cooked chickpeas per 200g tofu",
+        "rationale": "Hearty soy-free plant protein for curries and stir-fries.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "paneer",
+        "ratio": "1:1",
+        "rationale": "Firm Indian cheese with similar cube texture when dairy is tolerated.",
+        "allergens": ["dairy"],
+        "dietary_tags": ["vegetarian", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "peanut butter",
+    "aliases": ["peanuts", "groundnut butter", "groundnut"],
+    "allergens": ["peanut"],
+    "dietary_incompatible": ["nut-free"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Legume-derived nut butter.",
+    "allowed_substitutes": [
+      {
+        "name": "sunflower seed butter",
+        "ratio": "1:1",
+        "rationale": "Creamy roasted seed butter free of peanuts and tree nuts.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "tahini",
+        "ratio": "1:1",
+        "rationale": "Rich sesame paste great for savory dressings and baking.",
+        "allergens": ["sesame"],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "almond butter",
+        "ratio": "1:1",
+        "rationale": "Similar richness for peanut-free users who tolerate tree nuts.",
+        "allergens": ["tree_nut"],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "peanut oil",
+    "aliases": ["groundnut oil"],
+    "allergens": ["peanut"],
+    "dietary_incompatible": ["nut-free"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "High-smoke-point peanut oil.",
+    "allowed_substitutes": [
+      {
+        "name": "sunflower oil",
+        "ratio": "1:1",
+        "rationale": "Neutral high-heat frying oil free of peanuts and tree nuts.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "canola oil",
+        "ratio": "1:1",
+        "rationale": "Neutral cooking oil for stir-frying.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "tahini",
+    "aliases": ["sesame paste"],
+    "allergens": ["sesame"],
+    "dietary_incompatible": [],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Ground sesame seed paste.",
+    "allowed_substitutes": [
+      {
+        "name": "sunflower seed butter",
+        "ratio": "1:1",
+        "rationale": "Offers smooth earthy richness without sesame or nuts.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "cashew butter",
+        "ratio": "1:1",
+        "rationale": "Mild creamy paste for sesame-free dressings.",
+        "allergens": ["tree_nut"],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "fish sauce",
+    "aliases": ["nam pla", "nuoc mam"],
+    "allergens": ["fish"],
+    "dietary_incompatible": ["vegan", "vegetarian"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Fermented anchovy seasoning.",
+    "allowed_substitutes": [
+      {
+        "name": "coconut aminos + seaweed",
+        "ratio": "1 tbsp coconut aminos + pinch crushed nori per 1 tbsp fish sauce",
+        "rationale": "Captures savory oceanic umami without fish, soy, or gluten.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "soy sauce",
+        "ratio": "1:1",
+        "rationale": "Quick savory umami swap when soy and wheat are tolerated.",
+        "allergens": ["soy", "gluten"],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "honey",
+    "aliases": ["raw honey", "wildflower honey"],
+    "allergens": [],
+    "dietary_incompatible": ["vegan"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Bee-derived liquid sweetener (non-vegan).",
+    "allowed_substitutes": [
+      {
+        "name": "maple syrup",
+        "ratio": "1:1",
+        "rationale": "Pourable plant-based sweetener with warm caramel notes.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "agave nectar",
+        "ratio": "1:1",
+        "rationale": "Mild liquid vegan sweetener for dressings and tea.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "gelatin",
+    "aliases": ["unflavored gelatin", "gelatin powder"],
+    "allergens": [],
+    "dietary_incompatible": ["vegan", "vegetarian"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Animal collagen gelling agent.",
+    "allowed_substitutes": [
+      {
+        "name": "agar-agar powder",
+        "ratio": "1 tsp agar powder per 1 tbsp gelatin",
+        "rationale": "Seaweed-based gelling agent suitable for vegan and vegetarian desserts.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "beef broth",
+    "aliases": ["beef stock"],
+    "allergens": [],
+    "dietary_incompatible": ["vegan", "vegetarian"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Meat-based broth.",
+    "allowed_substitutes": [
+      {
+        "name": "mushroom vegetable broth",
+        "ratio": "1:1",
+        "rationale": "Deep savory umami flavor for soups and stews without meat.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "green onion",
+    "aliases": ["scallions", "scallion", "spring onion", "spring onions"],
+    "allergens": [],
+    "dietary_incompatible": [],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Mild allium garnish and aromatic.",
+    "allowed_substitutes": [
+      {
+        "name": "chives",
+        "ratio": "1:1",
+        "rationale": "Delicate onion flavor ideal as a fresh garnish.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "shallots",
+        "ratio": "1 tbsp minced shallot per 2 green onions",
+        "rationale": "Mild sweet onion flavor for cooked dishes.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "chickpeas",
+    "aliases": ["garbanzo beans", "chickpea", "garbanzo bean"],
+    "allergens": [],
+    "dietary_incompatible": [],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Versatile legume.",
+    "allowed_substitutes": [
+      {
+        "name": "cannellini beans",
+        "ratio": "1:1",
+        "rationale": "Creamy white beans work well in soups, salads, and stews.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "eggplant",
+    "aliases": ["aubergine", "brinjal"],
+    "allergens": [],
+    "dietary_incompatible": [],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Nightshade vegetable.",
+    "allowed_substitutes": [
+      {
+        "name": "zucchini",
+        "ratio": "1:1",
+        "rationale": "Roasts and absorbs sauces cleanly with similar moisture.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "portobello mushrooms",
+        "ratio": "1:1",
+        "rationale": "Meaty texture for grilling and roasted dishes.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "white sugar",
+    "aliases": ["caster sugar", "granulated sugar", "sugar"],
+    "allergens": [],
+    "dietary_incompatible": [],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Standard dry sweetener.",
+    "allowed_substitutes": [
+      {
+        "name": "coconut sugar",
+        "ratio": "1:1",
+        "rationale": "Unrefined dry sweetener with subtle caramel notes.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "baking soda",
+    "aliases": ["bicarbonate of soda", "sodium bicarbonate"],
+    "allergens": [],
+    "dietary_incompatible": [],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Chemical leavening agent.",
+    "allowed_substitutes": [
+      {
+        "name": "baking powder",
+        "ratio": "3 tsp baking powder per 1 tsp baking soda",
+        "rationale": "Provides equivalent lift when acidic ingredients are adjusted.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "shrimp",
+    "aliases": ["prawns", "tiger prawns"],
+    "allergens": ["shellfish"],
+    "dietary_incompatible": ["vegan", "vegetarian"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Crustacean shellfish.",
+    "allowed_substitutes": [
+      {
+        "name": "king oyster mushrooms",
+        "ratio": "1:1 sliced",
+        "rationale": "Firm bouncy texture absorbs garlic-lemon sauces without shellfish.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      },
+      {
+        "name": "hearts of palm",
+        "ratio": "1:1",
+        "rationale": "Tender bite suitable for tacos and cold salads.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "flour",
+    "aliases": [],
+    "allergens": ["gluten", "wheat"],
+    "dietary_incompatible": ["gluten-free"],
+    "is_ambiguous": true,
+    "ambiguity_reason": "Generic 'flour' is ambiguous (could be wheat, almond, or gluten-free blend). Specify exact flour type before substituting.",
+    "notes": "Ambiguous ingredient entry for safety enforcement.",
+    "allowed_substitutes": []
+  },
+  {
+    "canonical_name": "stock",
+    "aliases": ["broth"],
+    "allergens": [],
+    "dietary_incompatible": [],
+    "is_ambiguous": true,
+    "ambiguity_reason": "Generic 'stock' or 'broth' may be chicken, beef, fish, or vegetable with hidden allergens. Specify source first.",
+    "notes": "Ambiguous ingredient entry for safety enforcement.",
+    "allowed_substitutes": []
+  },
+  {
+    "canonical_name": "oil",
+    "aliases": ["cooking oil", "salad oil"],
+    "allergens": [],
+    "dietary_incompatible": [],
+    "is_ambiguous": true,
+    "ambiguity_reason": "Generic 'oil' could refer to peanut, sesame, or tree-nut oil. Specify the exact oil type.",
+    "notes": "Ambiguous ingredient entry for safety enforcement.",
+    "allowed_substitutes": []
+  },
+  {
+    "canonical_name": "olive oil",
+    "aliases": ["extra virgin olive oil", "evoo"],
+    "allergens": [],
+    "dietary_incompatible": [],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Safe plant-based cooking fat.",
+    "allowed_substitutes": [
+      {
+        "name": "avocado oil",
+        "ratio": "1:1",
+        "rationale": "Mild-flavored oil suitable for roasting and dressings.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "coconut oil",
+    "aliases": [],
+    "allergens": [],
+    "dietary_incompatible": [],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Plant fat safe for dairy-free baking.",
+    "allowed_substitutes": []
+  },
+  {
+    "canonical_name": "applesauce",
+    "aliases": ["unsweetened applesauce"],
+    "allergens": [],
+    "dietary_incompatible": [],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Fruit puree baking substitute.",
+    "allowed_substitutes": []
+  },
+  {
+    "canonical_name": "ghee",
+    "aliases": ["clarified butter"],
+    "allergens": ["dairy"],
+    "dietary_incompatible": ["vegan", "dairy-free"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Clarified dairy butter; still contains dairy risk.",
+    "allowed_substitutes": [
+      {
+        "name": "coconut oil",
+        "ratio": "1:1",
+        "rationale": "Dairy-free cooking fat with high heat tolerance.",
+        "allergens": [],
+        "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"]
+      }
+    ]
+  },
+  {
+    "canonical_name": "oat milk",
+    "aliases": [],
+    "allergens": [],
+    "dietary_incompatible": [],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Plant milk (certified gluten-free oat milk assumed).",
+    "allowed_substitutes": []
+  },
+  {
+    "canonical_name": "soy milk",
+    "aliases": [],
+    "allergens": ["soy"],
+    "dietary_incompatible": [],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Soy-based plant milk.",
+    "allowed_substitutes": []
+  },
+  {
+    "canonical_name": "almond milk",
+    "aliases": [],
+    "allergens": ["tree_nut"],
+    "dietary_incompatible": ["nut-free"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Tree-nut milk.",
+    "allowed_substitutes": []
+  },
+  {
+    "canonical_name": "rice milk",
+    "aliases": [],
+    "allergens": [],
+    "dietary_incompatible": [],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Allergen-friendly grain milk.",
+    "allowed_substitutes": []
+  },
+  {
+    "canonical_name": "full-fat coconut milk",
+    "aliases": ["coconut cream", "canned coconut milk"],
+    "allergens": [],
+    "dietary_incompatible": [],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Rich dairy-free cream substitute.",
+    "allowed_substitutes": []
+  },
+  {
+    "canonical_name": "cashew cream",
+    "aliases": ["cashew butter"],
+    "allergens": ["tree_nut"],
+    "dietary_incompatible": ["nut-free"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Tree-nut cream.",
+    "allowed_substitutes": []
+  },
+  {
+    "canonical_name": "nutritional yeast",
+    "aliases": ["nooch"],
+    "allergens": [],
+    "dietary_incompatible": [],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Savory dairy-free seasoning.",
+    "allowed_substitutes": []
+  },
+  {
+    "canonical_name": "coconut aminos",
+    "aliases": [],
+    "allergens": [],
+    "dietary_incompatible": [],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Soy-free, gluten-free seasoning sauce.",
+    "allowed_substitutes": []
+  },
+  {
+    "canonical_name": "sunflower seed butter",
+    "aliases": ["sunbutter"],
+    "allergens": [],
+    "dietary_incompatible": [],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Nut-free, peanut-free seed spread.",
+    "allowed_substitutes": []
+  },
+  {
+    "canonical_name": "flax egg",
+    "aliases": ["flaxseed egg"],
+    "allergens": [],
+    "dietary_incompatible": [],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Vegan egg binder.",
+    "allowed_substitutes": []
+  },
+  {
+    "canonical_name": "oat flour",
+    "aliases": [],
+    "allergens": [],
+    "dietary_incompatible": [],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Gluten-free certified oat flour.",
+    "allowed_substitutes": []
+  },
+  {
+    "canonical_name": "almond flour",
+    "aliases": ["almond meal"],
+    "allergens": ["tree_nut"],
+    "dietary_incompatible": ["nut-free"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Tree-nut flour.",
+    "allowed_substitutes": []
+  },
+  {
+    "canonical_name": "spelt flour",
+    "aliases": [],
+    "allergens": ["gluten", "wheat"],
+    "dietary_incompatible": ["gluten-free"],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Wheat-family flour containing gluten.",
+    "allowed_substitutes": []
+  },
+  {
+    "canonical_name": "maple syrup",
+    "aliases": ["pure maple syrup"],
+    "allergens": [],
+    "dietary_incompatible": [],
+    "is_ambiguous": false,
+    "ambiguity_reason": "",
+    "notes": "Vegan liquid sweetener.",
+    "allowed_substitutes": []
+  }
+]

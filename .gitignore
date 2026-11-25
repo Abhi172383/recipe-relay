@@ -1,0 +1,31 @@
+# Python / Django
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+db.sqlite3
+htmlcov/
+.coverage
+coverage.xml
+.pytest_cache/
+
+# Node / React
+node_modules/
+src/frontend/dist/
+src/frontend/.vite/
+npm-debug.log*
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+
+# Selenium / Test Artifacts
+tests/selenium/screenshots/*.tmp.png
+.DS_Store
+*.log
+
+# SonarQube
+.scannerwork/

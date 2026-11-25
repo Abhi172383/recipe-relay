@@ -1,0 +1,30 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.11.0, pytest-8.4.2, pluggy-1.7.0
+django: version: 5.1.15, settings: reciperelay.settings (from ini)
+rootdir: /Users/abhilash/.gemini/antigravity/scratch/recipe-relay
+configfile: pytest.ini
+testpaths: tests/backend
+plugins: django-4.14.0
+collected 14 items
+
+tests/backend/test_health_metrics.py ..                                  [ 14%]
+tests/backend/test_llm_provider.py ...                                   [ 35%]
+tests/backend/test_recipes_api.py ...                                    [ 57%]
+tests/backend/test_rules_engine.py .....                                 [ 92%]
+tests/backend/test_llm_provider.py .                                     [100%]
+
+============================== 14 passed in 0.46s ==============================
+Name                                                   Stmts   Miss  Cover   Missing
+------------------------------------------------------------------------------------
+src/backend/recipes/apps.py                                4      0   100%
+src/backend/recipes/llm_provider.py                       67      2    97%   107, 178
+src/backend/recipes/management/commands/seed_data.py      28      1    96%   44
+src/backend/recipes/models.py                             92      9    90%   47-48, 51, 55, 78-79, 91, 114, 136
+src/backend/recipes/rules_engine.py                      104      7    93%   68, 173, 178, 222-228, 232, 248
+src/backend/recipes/serializers.py                        64      3    95%   59, 92, 97
+src/backend/recipes/urls.py                                3      0   100%
+src/backend/recipes/views.py                             122      6    95%   140-142, 213-215
+------------------------------------------------------------------------------------
+TOTAL                                                    484     28    94%
+Seeded 47 rules (0 new) and 0 new synthetic recipes.
+Evaluation complete: 40/40 passed (100.0%), allergy safety 40/40 (100.0%).

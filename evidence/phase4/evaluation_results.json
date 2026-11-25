@@ -1,0 +1,926 @@
+{
+  "timestamp_utc": "2026-11-25T12:27:26.673810+00:00",
+  "total_cases": 40,
+  "allergy_safe_cases": 40,
+  "allergy_safety_rate_pct": 100.0,
+  "accepted_cases": 40,
+  "acceptance_rate_pct": 100.0,
+  "targets": {
+    "allergy_safety_target_pct": 100.0,
+    "acceptance_target_pct": 80.0,
+    "allergy_safety_target_met": true,
+    "acceptance_target_met": true
+  },
+  "cases": [
+    {
+      "id": "EC-01",
+      "ingredient": "butter",
+      "allergies": [
+        "dairy"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "olive oil",
+        "coconut oil",
+        "applesauce"
+      ],
+      "rejected_candidates": [
+        {
+          "name": "ghee",
+          "reason": "Allergen/diet exclusion conflict: dairy, lactose, milk"
+        }
+      ],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Butter with dairy allergy must reject ghee and return olive oil/coconut oil/applesauce"
+    },
+    {
+      "id": "EC-02",
+      "ingredient": "butter",
+      "allergies": [],
+      "dietary_preferences": [
+        "vegan"
+      ],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "olive oil",
+        "coconut oil",
+        "applesauce"
+      ],
+      "rejected_candidates": [
+        {
+          "name": "ghee",
+          "reason": "Allergen/diet exclusion conflict: dairy"
+        }
+      ],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Butter with vegan diet must exclude ghee"
+    },
+    {
+      "id": "EC-03",
+      "ingredient": "unsalted butter",
+      "allergies": [
+        "dairy"
+      ],
+      "dietary_preferences": [
+        "dairy-free"
+      ],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "olive oil",
+        "coconut oil",
+        "applesauce"
+      ],
+      "rejected_candidates": [
+        {
+          "name": "ghee",
+          "reason": "Allergen/diet exclusion conflict: dairy, lactose, milk"
+        }
+      ],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Alias 'unsalted butter' resolves to butter"
+    },
+    {
+      "id": "EC-04",
+      "ingredient": "whole milk",
+      "allergies": [
+        "dairy"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "oat milk",
+        "soy milk",
+        "almond milk",
+        "rice milk"
+      ],
+      "rejected_candidates": [],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Whole milk with dairy allergy suggests oat/soy/almond/rice milk"
+    },
+    {
+      "id": "EC-05",
+      "ingredient": "whole milk",
+      "allergies": [
+        "dairy",
+        "tree_nut"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "oat milk",
+        "soy milk",
+        "rice milk"
+      ],
+      "rejected_candidates": [
+        {
+          "name": "almond milk",
+          "reason": "Allergen/diet exclusion conflict: nuts, tree nut, tree nuts, tree_nut"
+        }
+      ],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Dairy + tree_nut allergy must reject almond milk"
+    },
+    {
+      "id": "EC-06",
+      "ingredient": "whole milk",
+      "allergies": [
+        "dairy",
+        "tree_nut",
+        "soy"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "oat milk",
+        "rice milk"
+      ],
+      "rejected_candidates": [
+        {
+          "name": "soy milk",
+          "reason": "Allergen/diet exclusion conflict: soy, soya, soybean"
+        },
+        {
+          "name": "almond milk",
+          "reason": "Allergen/diet exclusion conflict: nuts, tree nut, tree nuts, tree_nut"
+        }
+      ],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Dairy + tree_nut + soy rejects almond & soy milk, keeps oat/rice milk"
+    },
+    {
+      "id": "EC-07",
+      "ingredient": "heavy whipping cream",
+      "allergies": [
+        "dairy"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "full-fat coconut milk",
+        "cashew cream",
+        "silken tofu blend"
+      ],
+      "rejected_candidates": [],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Alias 'heavy whipping cream' resolves to heavy cream"
+    },
+    {
+      "id": "EC-08",
+      "ingredient": "heavy cream",
+      "allergies": [
+        "dairy",
+        "tree_nut",
+        "soy"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "full-fat coconut milk"
+      ],
+      "rejected_candidates": [
+        {
+          "name": "cashew cream",
+          "reason": "Allergen/diet exclusion conflict: nuts, tree nut, tree nuts, tree_nut"
+        },
+        {
+          "name": "silken tofu blend",
+          "reason": "Allergen/diet exclusion conflict: soy, soya, soybean"
+        }
+      ],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Must reject cashew cream (tree_nut) and silken tofu blend (soy), keep coconut milk"
+    },
+    {
+      "id": "EC-09",
+      "ingredient": "parmesan cheese",
+      "allergies": [
+        "dairy"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "nutritional yeast"
+      ],
+      "rejected_candidates": [
+        {
+          "name": "pecorino romano",
+          "reason": "Allergen/diet exclusion conflict: dairy, lactose, milk"
+        }
+      ],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Parmesan with dairy allergy rejects pecorino romano and returns nutritional yeast"
+    },
+    {
+      "id": "EC-10",
+      "ingredient": "greek yogurt",
+      "allergies": [
+        "dairy"
+      ],
+      "dietary_preferences": [
+        "vegan"
+      ],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "coconut yogurt",
+        "silken tofu"
+      ],
+      "rejected_candidates": [],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Greek yogurt with dairy allergy and vegan diet returns coconut yogurt/silken tofu"
+    },
+    {
+      "id": "EC-11",
+      "ingredient": "casein",
+      "allergies": [
+        "dairy"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "pea protein"
+      ],
+      "rejected_candidates": [],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Hidden dairy alias 'casein' resolves to whey protein and suggests pea protein"
+    },
+    {
+      "id": "EC-12",
+      "ingredient": "eggs",
+      "allergies": [
+        "egg"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "flax egg",
+        "mashed banana",
+        "aquafaba"
+      ],
+      "rejected_candidates": [],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Eggs with egg allergy suggests flax egg/mashed banana/aquafaba"
+    },
+    {
+      "id": "EC-13",
+      "ingredient": "mayo",
+      "allergies": [
+        "egg",
+        "dairy"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "mashed avocado",
+        "hummus"
+      ],
+      "rejected_candidates": [
+        {
+          "name": "greek yogurt",
+          "reason": "Allergen/diet exclusion conflict: dairy, lactose, milk"
+        }
+      ],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Alias 'mayo' with egg+dairy allergy rejects greek yogurt"
+    },
+    {
+      "id": "EC-14",
+      "ingredient": "mayonnaise",
+      "allergies": [
+        "egg",
+        "dairy",
+        "sesame"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "mashed avocado"
+      ],
+      "rejected_candidates": [
+        {
+          "name": "hummus",
+          "reason": "Allergen/diet exclusion conflict: sesame"
+        },
+        {
+          "name": "greek yogurt",
+          "reason": "Allergen/diet exclusion conflict: dairy, lactose, milk"
+        }
+      ],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Must reject hummus (sesame) and greek yogurt (dairy), keep mashed avocado"
+    },
+    {
+      "id": "EC-15",
+      "ingredient": "all-purpose flour",
+      "allergies": [
+        "gluten"
+      ],
+      "dietary_preferences": [
+        "gluten-free"
+      ],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "oat flour",
+        "rice flour blend",
+        "almond flour"
+      ],
+      "rejected_candidates": [
+        {
+          "name": "spelt flour",
+          "reason": "Allergen/diet exclusion conflict: gluten, wheat"
+        }
+      ],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Must reject spelt flour (gluten/wheat) and return oat/rice/almond flour"
+    },
+    {
+      "id": "EC-16",
+      "ingredient": "plain flour",
+      "allergies": [
+        "gluten",
+        "tree_nut"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "oat flour",
+        "rice flour blend"
+      ],
+      "rejected_candidates": [
+        {
+          "name": "almond flour",
+          "reason": "Allergen/diet exclusion conflict: nuts, tree nut, tree nuts, tree_nut"
+        },
+        {
+          "name": "spelt flour",
+          "reason": "Allergen/diet exclusion conflict: gluten, wheat"
+        }
+      ],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Alias 'plain flour' with gluten+tree_nut rejects almond flour and spelt flour"
+    },
+    {
+      "id": "EC-17",
+      "ingredient": "panko",
+      "allergies": [
+        "wheat"
+      ],
+      "dietary_preferences": [
+        "gluten-free"
+      ],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "crushed rice crackers",
+        "rolled oats"
+      ],
+      "rejected_candidates": [],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Alias 'panko' resolves to breadcrumbs and gives gluten-free swaps"
+    },
+    {
+      "id": "EC-18",
+      "ingredient": "spaghetti",
+      "allergies": [
+        "gluten"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "brown rice pasta",
+        "chickpea pasta"
+      ],
+      "rejected_candidates": [],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Alias 'spaghetti' resolves to pasta"
+    },
+    {
+      "id": "EC-19",
+      "ingredient": "soy sauce",
+      "allergies": [
+        "soy",
+        "gluten"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "coconut aminos"
+      ],
+      "rejected_candidates": [
+        {
+          "name": "gluten-free tamari",
+          "reason": "Allergen/diet exclusion conflict: soy, soya, soybean"
+        }
+      ],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Soy+gluten allergy must reject gluten-free tamari (contains soy), keep coconut aminos"
+    },
+    {
+      "id": "EC-20",
+      "ingredient": "tamari",
+      "allergies": [
+        "soy"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "coconut aminos"
+      ],
+      "rejected_candidates": [
+        {
+          "name": "gluten-free tamari",
+          "reason": "Allergen/diet exclusion conflict: soy, soya, soybean"
+        }
+      ],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Alias 'tamari' with soy allergy keeps only coconut aminos"
+    },
+    {
+      "id": "EC-21",
+      "ingredient": "tofu",
+      "allergies": [
+        "soy"
+      ],
+      "dietary_preferences": [
+        "vegan"
+      ],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "chickpeas"
+      ],
+      "rejected_candidates": [
+        {
+          "name": "paneer",
+          "reason": "Allergen/diet exclusion conflict: dairy"
+        }
+      ],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Vegan + soy allergy rejects paneer (dairy) and keeps chickpeas"
+    },
+    {
+      "id": "EC-22",
+      "ingredient": "peanut butter",
+      "allergies": [
+        "peanut"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "sunflower seed butter",
+        "tahini",
+        "almond butter"
+      ],
+      "rejected_candidates": [],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Peanut butter with peanut allergy returns sunflower seed butter/tahini/almond butter"
+    },
+    {
+      "id": "EC-23",
+      "ingredient": "peanut butter",
+      "allergies": [
+        "peanut",
+        "tree_nut",
+        "sesame"
+      ],
+      "dietary_preferences": [
+        "nut-free"
+      ],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "sunflower seed butter"
+      ],
+      "rejected_candidates": [
+        {
+          "name": "tahini",
+          "reason": "Allergen/diet exclusion conflict: sesame"
+        },
+        {
+          "name": "almond butter",
+          "reason": "Allergen/diet exclusion conflict: nuts, tree nut, tree nuts, tree_nut"
+        }
+      ],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Peanut+tree_nut+sesame rejects almond butter & tahini, keeps sunflower seed butter"
+    },
+    {
+      "id": "EC-24",
+      "ingredient": "groundnut oil",
+      "allergies": [
+        "peanut"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "sunflower oil",
+        "canola oil"
+      ],
+      "rejected_candidates": [],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Alias 'groundnut oil' resolves to peanut oil and returns sunflower/canola oil"
+    },
+    {
+      "id": "EC-25",
+      "ingredient": "tahini",
+      "allergies": [
+        "sesame",
+        "tree_nut"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "sunflower seed butter"
+      ],
+      "rejected_candidates": [
+        {
+          "name": "cashew butter",
+          "reason": "Allergen/diet exclusion conflict: nuts, tree nut, tree nuts, tree_nut"
+        }
+      ],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Sesame+tree_nut rejects cashew butter and keeps sunflower seed butter"
+    },
+    {
+      "id": "EC-26",
+      "ingredient": "fish sauce",
+      "allergies": [
+        "fish",
+        "soy"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "coconut aminos + seaweed"
+      ],
+      "rejected_candidates": [
+        {
+          "name": "soy sauce",
+          "reason": "Allergen/diet exclusion conflict: soy, soya, soybean"
+        }
+      ],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Fish+soy allergy rejects soy sauce and keeps coconut aminos + seaweed"
+    },
+    {
+      "id": "EC-27",
+      "ingredient": "fish sauce",
+      "allergies": [],
+      "dietary_preferences": [
+        "vegetarian"
+      ],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "coconut aminos + seaweed",
+        "soy sauce"
+      ],
+      "rejected_candidates": [],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Vegetarian preference swaps fish sauce safely"
+    },
+    {
+      "id": "EC-28",
+      "ingredient": "honey",
+      "allergies": [],
+      "dietary_preferences": [
+        "vegan"
+      ],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "maple syrup",
+        "agave nectar"
+      ],
+      "rejected_candidates": [],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Vegan preference replaces honey with maple syrup/agave"
+    },
+    {
+      "id": "EC-29",
+      "ingredient": "gelatin",
+      "allergies": [],
+      "dietary_preferences": [
+        "vegan"
+      ],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "agar-agar powder"
+      ],
+      "rejected_candidates": [],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Vegan preference replaces gelatin with agar-agar powder"
+    },
+    {
+      "id": "EC-30",
+      "ingredient": "beef broth",
+      "allergies": [],
+      "dietary_preferences": [
+        "vegetarian"
+      ],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "mushroom vegetable broth"
+      ],
+      "rejected_candidates": [],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Vegetarian preference replaces beef broth with mushroom vegetable broth"
+    },
+    {
+      "id": "EC-31",
+      "ingredient": "scallions",
+      "allergies": [],
+      "dietary_preferences": [
+        "vegan"
+      ],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "chives",
+        "shallots"
+      ],
+      "rejected_candidates": [],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Alias 'scallions' resolves to green onion"
+    },
+    {
+      "id": "EC-32",
+      "ingredient": "garbanzo beans",
+      "allergies": [],
+      "dietary_preferences": [
+        "gluten-free"
+      ],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "cannellini beans"
+      ],
+      "rejected_candidates": [],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Alias 'garbanzo beans' resolves to chickpeas"
+    },
+    {
+      "id": "EC-33",
+      "ingredient": "aubergine",
+      "allergies": [],
+      "dietary_preferences": [
+        "vegan"
+      ],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "zucchini",
+        "portobello mushrooms"
+      ],
+      "rejected_candidates": [],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Alias 'aubergine' resolves to eggplant"
+    },
+    {
+      "id": "EC-34",
+      "ingredient": "caster sugar",
+      "allergies": [],
+      "dietary_preferences": [
+        "vegan"
+      ],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "coconut sugar"
+      ],
+      "rejected_candidates": [],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Alias 'caster sugar' resolves to white sugar"
+    },
+    {
+      "id": "EC-35",
+      "ingredient": "bicarbonate of soda",
+      "allergies": [],
+      "dietary_preferences": [
+        "gluten-free"
+      ],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "baking powder"
+      ],
+      "rejected_candidates": [],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Alias 'bicarbonate of soda' resolves to baking soda"
+    },
+    {
+      "id": "EC-36",
+      "ingredient": "prawns",
+      "allergies": [
+        "shellfish"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "verified",
+      "actual_status": "verified",
+      "suggestions": [
+        "king oyster mushrooms",
+        "hearts of palm"
+      ],
+      "rejected_candidates": [],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Alias 'prawns' resolves to shrimp and returns vegan swaps"
+    },
+    {
+      "id": "EC-37",
+      "ingredient": "flour",
+      "allergies": [
+        "gluten"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "no_safe_suggestion",
+      "actual_status": "no_safe_suggestion",
+      "suggestions": [],
+      "rejected_candidates": [
+        {
+          "name": "wheat flour",
+          "reason": "Generic 'flour' is ambiguous (could be wheat, almond, or gluten-free blend). Specify exact flour type before substituting."
+        },
+        {
+          "name": "unverified substitute for flour",
+          "reason": "Generic 'flour' is ambiguous (could be wheat, almond, or gluten-free blend). Specify exact flour type before substituting."
+        }
+      ],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Ambiguous ingredient 'flour' must return safe no-suggestion response"
+    },
+    {
+      "id": "EC-38",
+      "ingredient": "oil",
+      "allergies": [
+        "peanut"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "no_safe_suggestion",
+      "actual_status": "no_safe_suggestion",
+      "suggestions": [],
+      "rejected_candidates": [
+        {
+          "name": "peanut oil",
+          "reason": "Generic 'oil' could refer to peanut, sesame, or tree-nut oil. Specify the exact oil type."
+        },
+        {
+          "name": "unverified substitute for oil",
+          "reason": "Generic 'oil' could refer to peanut, sesame, or tree-nut oil. Specify the exact oil type."
+        }
+      ],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Ambiguous ingredient 'oil' must return safe no-suggestion response"
+    },
+    {
+      "id": "EC-39",
+      "ingredient": "stock",
+      "allergies": [],
+      "dietary_preferences": [
+        "vegan"
+      ],
+      "expected_status": "no_safe_suggestion",
+      "actual_status": "no_safe_suggestion",
+      "suggestions": [],
+      "rejected_candidates": [
+        {
+          "name": "beef broth",
+          "reason": "Generic 'stock' or 'broth' may be chicken, beef, fish, or vegetable with hidden allergens. Specify source first."
+        },
+        {
+          "name": "unverified substitute for stock",
+          "reason": "Generic 'stock' or 'broth' may be chicken, beef, fish, or vegetable with hidden allergens. Specify source first."
+        }
+      ],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Ambiguous ingredient 'stock' must return safe no-suggestion response"
+    },
+    {
+      "id": "EC-40",
+      "ingredient": "dragonfruit powder",
+      "allergies": [
+        "dairy"
+      ],
+      "dietary_preferences": [],
+      "expected_status": "no_safe_suggestion",
+      "actual_status": "no_safe_suggestion",
+      "suggestions": [],
+      "rejected_candidates": [
+        {
+          "name": "unverified berry dust",
+          "reason": "Missing deterministic rule for 'dragonfruit powder'. Unknown ingredients cannot be safely substituted."
+        },
+        {
+          "name": "unverified substitute for dragonfruit powder",
+          "reason": "Missing deterministic rule for 'dragonfruit powder'. Unknown ingredients cannot be safely substituted."
+        }
+      ],
+      "allergy_safe": true,
+      "case_passed": true,
+      "leaked_allergens": [],
+      "description": "Unknown ingredient absent from rules table must return safe no-suggestion response"
+    }
+  ]
+}

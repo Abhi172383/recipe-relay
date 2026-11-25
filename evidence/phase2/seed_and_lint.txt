@@ -1,0 +1,6 @@
+flake8: 0 issues
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, recipes, sessions
+Running migrations:
+  No migrations to apply.
+Seeded 47 rules (0 new) and 0 new synthetic recipes.

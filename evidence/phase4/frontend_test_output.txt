@@ -1,0 +1,27 @@
+
+> reciperelay-frontend@1.0.0 test
+> vitest run
+
+
+ RUN  v2.1.9 /Users/abhilash/.gemini/antigravity/scratch/recipe-relay/src/frontend
+
+ ✓ src/__tests__/App.test.jsx (1 test) 85ms
+
+ Test Files  1 passed (1)
+      Tests  1 passed (1)
+   Start at  17:57:26
+   Duration  432ms (transform 37ms, setup 17ms, collect 71ms, tests 85ms, environment 119ms, prepare 33ms)
+
+
+> reciperelay-frontend@1.0.0 build
+> vite build
+
+vite v5.4.21 building for production...
+transforming...
+✓ 36 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.45 kB │ gzip:  0.31 kB
+dist/assets/index-gMdDiGVn.css    3.32 kB │ gzip:  1.24 kB
+dist/assets/index-NYN94oJP.js   162.43 kB │ gzip: 51.23 kB
+✓ built in 223ms

@@ -1,0 +1,19 @@
+{
+  "health": {
+    "status": "healthy",
+    "database": "connected",
+    "database_vendor": "sqlite",
+    "rules_loaded": 47,
+    "recipes_count": 9,
+    "llm_provider": "mock"
+  },
+  "metrics": {
+    "reciperelay_recipes_total": 9,
+    "reciperelay_rules_total": 47,
+    "reciperelay_substitution_requests_total": 82,
+    "reciperelay_substitution_verified_total": 74,
+    "reciperelay_substitution_no_safe_total": 8,
+    "reciperelay_rejected_candidates_total": 61,
+    "reciperelay_substitution_avg_latency_ms": 0.83
+  }
+}

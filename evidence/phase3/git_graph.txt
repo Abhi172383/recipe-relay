@@ -1,0 +1,14 @@
+*   c3881cd chore(git): resolve planned merge conflict in QA checklist and document exercise
+|\  
+| * 44b209f docs(qa): record measured 94% backend test coverage
+* | 4a356b7 docs(qa): document CI coverage.xml enforcement
+|/  
+*   951a8ce Merge pull request #2 from feat/sprint2-substitutions: Sprint 2 Safe Substitution & QA
+|\  
+| * f6d0a64 feat(sprint2): add deterministic rules gate, LLM adapter, Selenium POM, CI/CD, and docs
+|/  
+*   b0b0994 Merge pull request #1 from feat/sprint1-recipes: Sprint 1 Recipe Upload & Search
+|\  
+| * d8a2f8f feat(sprint1): implement recipe CRUD, sharing, search, and synthetic seed data
+|/  
+* 1c20e8c docs(phase1): add SRS, 2-sprint Agile plan, diagrams, and UI prototype

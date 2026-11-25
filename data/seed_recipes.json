@@ -1,0 +1,139 @@
+[
+  {
+    "title": "Creamy Garlic Herb Pasta",
+    "author_name": "Chef Aria (Synthetic)",
+    "description": "Quick weeknight pasta tossed in a garlicky herb butter sauce with parmesan and fresh parsley.",
+    "instructions": "1. Boil salted water and cook pasta until al dente.\n2. Melt butter in a skillet over medium heat and saute minced garlic for 1 minute.\n3. Stir in heavy cream and simmer 3 minutes.\n4. Toss cooked pasta with sauce, grated parmesan cheese, and chopped herbs.",
+    "prep_time_minutes": 20,
+    "servings": 4,
+    "dietary_tags": ["vegetarian"],
+    "is_public": true,
+    "share_token": "pasta-garlic-herb-01",
+    "ingredients": [
+      {"name": "pasta", "quantity": "300", "unit": "g", "notes": "spaghetti or penne"},
+      {"name": "butter", "quantity": "2", "unit": "tbsp", "notes": "unsalted"},
+      {"name": "heavy cream", "quantity": "1/2", "unit": "cup", "notes": ""},
+      {"name": "parmesan cheese", "quantity": "1/3", "unit": "cup", "notes": "freshly grated"},
+      {"name": "green onion", "quantity": "2", "unit": "stalks", "notes": "finely sliced"}
+    ]
+  },
+  {
+    "title": "Roasted Chickpea & Aubergine Curry",
+    "author_name": "Cook Maya (Synthetic)",
+    "description": "Warming spiced curry with roasted eggplant, chickpeas, and creamy yogurt finish.",
+    "instructions": "1. Toss diced eggplant with olive oil and roast at 200C for 20 minutes.\n2. Simmer tomatoes, garlic, ginger, and curry spices in a pot.\n3. Fold in garbanzo beans and roasted eggplant for 10 minutes.\n4. Swirl in greek yogurt off heat and garnish with scallions.",
+    "prep_time_minutes": 35,
+    "servings": 4,
+    "dietary_tags": ["vegetarian", "gluten-free"],
+    "is_public": true,
+    "share_token": "chickpea-curry-02",
+    "ingredients": [
+      {"name": "garbanzo beans", "quantity": "2", "unit": "cups", "notes": "cooked and drained"},
+      {"name": "aubergine", "quantity": "1", "unit": "large", "notes": "cubed"},
+      {"name": "greek yogurt", "quantity": "1/3", "unit": "cup", "notes": "for cooling finish"},
+      {"name": "scallions", "quantity": "3", "unit": "stalks", "notes": "garnish"}
+    ]
+  },
+  {
+    "title": "Honey Oat Breakfast Pancakes",
+    "author_name": "Baker Leo (Synthetic)",
+    "description": "Fluffy weekend pancakes sweetened lightly with wildflower honey and milk.",
+    "instructions": "1. Whisk all-purpose flour, bicarbonate of soda, and a pinch of salt.\n2. Beat eggs, whole milk, melted butter, and honey in a separate bowl.\n3. Combine wet and dry ingredients gently.\n4. Cook on a greased skillet until golden on both sides.",
+    "prep_time_minutes": 25,
+    "servings": 3,
+    "dietary_tags": ["vegetarian"],
+    "is_public": true,
+    "share_token": "honey-pancakes-03",
+    "ingredients": [
+      {"name": "all-purpose flour", "quantity": "1.5", "unit": "cups", "notes": ""},
+      {"name": "whole milk", "quantity": "1", "unit": "cup", "notes": ""},
+      {"name": "eggs", "quantity": "2", "unit": "whole", "notes": "room temperature"},
+      {"name": "butter", "quantity": "2", "unit": "tbsp", "notes": "melted"},
+      {"name": "honey", "quantity": "2", "unit": "tbsp", "notes": ""},
+      {"name": "bicarbonate of soda", "quantity": "1/2", "unit": "tsp", "notes": ""}
+    ]
+  },
+  {
+    "title": "Crispy Sesame Tofu Stir-Fry",
+    "author_name": "Chef Kenji (Synthetic)",
+    "description": "Fast skillet stir-fry with seared extra-firm tofu, soy glaze, and peanut-free aromatics.",
+    "instructions": "1. Press and cube firm tofu, then sear in peanut oil until crisp.\n2. Add vegetables and toss over high heat.\n3. Pour in soy sauce and drizzle tahini-garlic dressing.\n4. Top with sliced green onions.",
+    "prep_time_minutes": 25,
+    "servings": 2,
+    "dietary_tags": ["vegan", "dairy-free"],
+    "is_public": true,
+    "share_token": "tofu-stirfry-04",
+    "ingredients": [
+      {"name": "tofu", "quantity": "250", "unit": "g", "notes": "extra firm"},
+      {"name": "soy sauce", "quantity": "3", "unit": "tbsp", "notes": ""},
+      {"name": "peanut oil", "quantity": "1", "unit": "tbsp", "notes": "for searing"},
+      {"name": "tahini", "quantity": "1", "unit": "tbsp", "notes": ""},
+      {"name": "green onion", "quantity": "2", "unit": "stalks", "notes": ""}
+    ]
+  },
+  {
+    "title": "Crispy Panko Garlic Shrimp",
+    "author_name": "Chef Elena (Synthetic)",
+    "description": "Oven-baked garlic shrimp coated in golden panko breadcrumbs and butter.",
+    "instructions": "1. Toss peeled shrimp with melted butter and minced garlic.\n2. Coat evenly in panko breadcrumbs.\n3. Bake at 210C for 10 minutes until golden and crisp.",
+    "prep_time_minutes": 20,
+    "servings": 2,
+    "dietary_tags": [],
+    "is_public": true,
+    "share_token": "garlic-shrimp-05",
+    "ingredients": [
+      {"name": "shrimp", "quantity": "300", "unit": "g", "notes": "peeled"},
+      {"name": "panko", "quantity": "3/4", "unit": "cup", "notes": ""},
+      {"name": "butter", "quantity": "2", "unit": "tbsp", "notes": "melted"}
+    ]
+  },
+  {
+    "title": "Peanut Noodle Salad Bowl",
+    "author_name": "Cook Sam (Synthetic)",
+    "description": "Chilled noodle bowl tossed in a savory peanut butter and soy dressing.",
+    "instructions": "1. Cook pasta and rinse under cold water.\n2. Whisk peanut butter, soy sauce, honey, and warm water into a smooth sauce.\n3. Toss noodles with crisp veggies and dressing.",
+    "prep_time_minutes": 18,
+    "servings": 2,
+    "dietary_tags": ["vegetarian"],
+    "is_public": true,
+    "share_token": "peanut-noodles-06",
+    "ingredients": [
+      {"name": "spaghetti", "quantity": "200", "unit": "g", "notes": ""},
+      {"name": "peanut butter", "quantity": "3", "unit": "tbsp", "notes": "creamy"},
+      {"name": "soy sauce", "quantity": "2", "unit": "tbsp", "notes": ""},
+      {"name": "honey", "quantity": "1", "unit": "tbsp", "notes": ""}
+    ]
+  },
+  {
+    "title": "Homestyle Vegetable & Bean Soup",
+    "author_name": "Chef Aria (Synthetic)",
+    "description": "Comforting simmered soup with chickpeas, beef broth base, and herbs.",
+    "instructions": "1. Saute aromatics in olive oil.\n2. Pour in beef broth and chickpeas; simmer 20 minutes.\n3. Season and serve warm.",
+    "prep_time_minutes": 30,
+    "servings": 4,
+    "dietary_tags": ["gluten-free", "dairy-free"],
+    "is_public": true,
+    "share_token": "bean-soup-07",
+    "ingredients": [
+      {"name": "beef broth", "quantity": "4", "unit": "cups", "notes": ""},
+      {"name": "chickpeas", "quantity": "1.5", "unit": "cups", "notes": ""},
+      {"name": "olive oil", "quantity": "1", "unit": "tbsp", "notes": ""}
+    ]
+  },
+  {
+    "title": "Classic Vanilla Pudding Cup",
+    "author_name": "Baker Leo (Synthetic)",
+    "description": "Silky chilled dessert set with gelatin and sweetened with caster sugar.",
+    "instructions": "1. Bloom unflavored gelatin in cold water.\n2. Warm whole milk and caster sugar until dissolved.\n3. Stir in gelatin, chill 3 hours until set.",
+    "prep_time_minutes": 15,
+    "servings": 4,
+    "dietary_tags": ["gluten-free"],
+    "is_public": true,
+    "share_token": "vanilla-pudding-08",
+    "ingredients": [
+      {"name": "whole milk", "quantity": "2", "unit": "cups", "notes": ""},
+      {"name": "caster sugar", "quantity": "1/3", "unit": "cup", "notes": ""},
+      {"name": "gelatin", "quantity": "1", "unit": "tbsp", "notes": "unflavored"}
+    ]
+  }
+]

@@ -9,7 +9,7 @@
 - [x] Synthetic-only seed data (`data/seed_recipes.json`); zero real PII.
 - [x] `.env.example` contains variable names only; `.env` is gitignored.
 - [x] `flake8` backend & test linting passes with 0 errors.
-- [x] Backend pytest suite passes with >= 80% statement coverage.
+- [x] Backend pytest suite passes with >= 80% statement coverage (actual measured: 94%).
 - [x] 40-case substitution evaluation meets 100% allergy safety and >= 80% acceptance.
 - [x] React Vitest suite and production `vite build` pass.
 - [x] Selenium Page-Object end-to-end journey passes in headless Chrome.
